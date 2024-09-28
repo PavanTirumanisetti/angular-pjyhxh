@@ -1,0 +1,87 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 30px);
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 250px;
+}
+
+.seat-grid span {
+  display: block;
+  padding: 10px;
+  background-color: lightgray;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.booked {
+  background-color: #e74c3c;
+}
+
+.available {
+  background-color: #cc2e70;
+}
+
+.seat-grid span:hover {
+  opacity: 0.8;
+}
+
+h3 {
+  text-align: center;
+  color: #ae2737;
+}
+
+@media (max-width: 600px) {
+  .seat-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+  }
+}
+/* Existing styles... */
+
+.selected {
+  background-color: #f39c12; /* Color for selected seats */
+}
+
